@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Service</title>
+    </head>
+    <body>
+        <label for="freeform">Enter order_uid:</label>
+        <br>
+        <input type="text" id="txt">
+        <input type="button" onclick="openPage()" value="Search">
+        <script type="text/javascript">
+            function openPage() {
+                var order_uid = document.getElementById('txt').value;
+                window.location.href = "http://127.0.0.1:80/search?order_uid=" + order_uid;
+            }
+        </script>
+    </body>
+</html>
